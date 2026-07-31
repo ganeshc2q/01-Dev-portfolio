@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Senior Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="var(--accent)"/>
+          <text x="7" y="22" font-family="DM Mono" font-size="14" font-weight="500" fill="white">&lt;/&gt;</text>
+        </svg>
+        <span>Your <strong>Name</strong></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#achievements">Work</a></li>
+        <li><a href="#social">Social</a></li>
+        <li><a href="#store">Store</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-left">
+      <div class="hero-badge">
+        <svg width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="5" fill="#22c55e"/></svg>
+        Available for new opportunities
+      </div>
+      <div class="hero-slideshow" id="heroSlideshow">
+        <div class="slide active">
+          <p class="slide-label">Who I am</p>
+          <h1>Senior Software<br><em>Engineer</em> with<br>12 Years of<br>Craft.</h1>
+        </div>
+        <div class="slide">
+          <p class="slide-label">What I build</p>
+          <h1>Scalable Systems<br>That Handle<br><em>Millions</em> of<br>Requests.</h1>
+        </div>
+        <div class="slide">
+          <p class="slide-label">My philosophy</p>
+          <h1>Clean Code.<br><em>Elegant</em><br>Architecture.<br>Real Impact.</h1>
+        </div>
+        <div class="slide">
+          <p class="slide-label">Open source</p>
+          <h1>48 Repos.<br><em>12K+</em> GitHub<br>Stars. Still<br>Counting.</h1>
+        </div>
+        <div class="slide">
+          <p class="slide-label">Educator</p>
+          <h1>Teaching<br><em>2,400+</em><br>Developers<br>Worldwide.</h1>
+        </div>
+      </div>
+      <div class="slideshow-controls">
+        <div class="slide-dots" id="slideDots"></div>
+        <div class="slide-arrows">
+          <button id="slidePrev" aria-label="Previous">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M11 4L6 9l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button id="slideNext" aria-label="Next">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M7 4l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+      <p class="hero-hint">Drag or swipe to explore →</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1l2.5 5 5.5.8-4 3.9.9 5.5L9 13.5l-4.9 2.7.9-5.5L1 6.8l5.5-.8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          Book Appointment
+        </a>
+        <a href="#achievements" class="btn btn-ghost">View Work</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-photo-frame">
+        <div class="photo-placeholder">
+          <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+            <circle cx="28" cy="20" r="12" stroke="var(--accent)" stroke-width="2"/>
+            <path d="M6 50c0-12 10-20 22-20s22 8 22 20" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <p>Profile Photo</p>
+          <small>600 × 700 px</small>
+        </div>
+        <div class="hero-float-card card-1">
+          <span class="fc-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 10h14M10 3l7 7-7 7" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <div>
+            <strong>12 Years</strong>
+            <span>Experience</span>
+          </div>
+        </div>
+        <div class="hero-float-card card-2">
+          <span class="fc-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2l2.4 4.8 5.3.8-3.85 3.75.91 5.3L10 14.2l-4.76 2.5.91-5.3L2.3 7.6l5.3-.8z" stroke="var(--accent)" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </span>
+          <div>
+            <strong>Top 1%</strong>
+            <span>StackOverflow</span>
+          </div>
+        </div>
+        <div class="hero-float-card card-3">
+          <span class="fc-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="5" width="16" height="12" rx="2" stroke="var(--accent)" stroke-width="1.6"/><path d="M2 8h16" stroke="var(--accent)" stroke-width="1.6"/><circle cx="14" cy="3" r="1.5" fill="var(--accent)"/><circle cx="6" cy="3" r="1.5" fill="var(--accent)"/></svg>
+          </span>
+          <div>
+            <strong>180+</strong>
+            <span>Projects Done</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-tech-strip">
+        <span>TypeScript</span><span>React</span><span>Node.js</span><span>Go</span><span>AWS</span><span>Docker</span><span>Kubernetes</span><span>PostgreSQL</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-col">
+          <div class="about-photo-wrap">
+            <div class="about-photo-placeholder">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect x="4" y="12" width="40" height="28" rx="3" stroke="var(--accent)" stroke-width="2"/>
+                <path d="M12 30l8-8 6 6 4-4 6 6" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="16" cy="22" r="3" stroke="var(--accent)" stroke-width="2"/>
+              </svg>
+              <p>About Photo</p>
+              <small>500 × 600 px</small>
+            </div>
+            <div class="about-exp-badge">
+              <span class="exp-number">12</span>
+              <span class="exp-label">Years<br>Experience</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="section-tag">About Me</div>
+          <h2 class="section-title">Turning Complex Problems<br>Into <em>Elegant Solutions</em></h2>
+          <p class="about-lead">I'm Your Name, a Senior Software Engineer based in San Francisco with 12 years of building high-impact software for startups, enterprises, and millions of end-users.</p>
+          <p class="about-body">From architecting microservices that handle 50M daily requests to mentoring dev teams across 4 continents, my work bridges deep technical skill with human-centred thinking. I specialize in full-stack development, distributed systems, and developer education — believing that great code is both a science and an art form.</p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="9" stroke="var(--accent)" stroke-width="1.8"/><path d="M7 11l3 3 5-5" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>B.Tech Computer Science, MIT (GPA 3.95)</span>
+            </div>
+            <div class="highlight-item">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="9" stroke="var(--accent)" stroke-width="1.8"/><path d="M7 11l3 3 5-5" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Ex–Google, Ex–Stripe, Currently at Scale AI</span>
+            </div>
+            <div class="highlight-item">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="9" stroke="var(--accent)" stroke-width="1.8"/><path d="M7 11l3 3 5-5" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Open source maintainer — 12K+ GitHub stars</span>
+            </div>
+            <div class="highlight-item">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="9" stroke="var(--accent)" stroke-width="1.8"/><path d="M7 11l3 3 5-5" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Published author — 3 technical books on distributed systems</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-soft" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Passion & Expertise</div>
+        <h2 class="section-title">Personal Interests &<br><em>Skill Set</em></h2>
+        <p class="section-sub">A life in code, systems, and curiosity — here's what fuels me every day.</p>
+      </div>
+      <div class="skills-split">
+        <div class="interests-col">
+          <h3 class="col-title">Personal Interests</h3>
+          <div class="interest-cards">
+            <div class="interest-card">
+              <div class="interest-icon">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="2" y="4" width="24" height="18" rx="3" stroke="var(--accent)" stroke-width="1.8"/><path d="M8 14l3 3 7-7" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <h4>Open Source Building</h4>
+                <p>Passionate about building tools developers actually love using. Contributor to Node.js, Vite and Prisma ecosystems.</p>
+              </div>
+            </div>
+            <div class="interest-card">
+              <div class="interest-icon">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 3L3 8v6c0 6.5 4.7 12.6 11 14 6.3-1.4 11-7.5 11-14V8L14 3z" stroke="var(--accent)" stroke-width="1.8" stroke-linejoin="round"/><path d="M10 14l3 3 5-5" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <h4>System Design & Architecture</h4>
+                <p>Fascinated by how large-scale systems stay alive under pressure. Loves sketching architectures on whiteboards.</p>
+              </div>
+            </div>
+            <div class="interest-card">
+              <div class="interest-icon">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" stroke="var(--accent)" stroke-width="1.8"/><path d="M14 8v6l4 2" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <h4>Competitive Programming</h4>
+                <p>Weekend warrior on Codeforces and LeetCode. Enjoys the puzzle-solving nature of algorithmic challenges.</p>
+              </div>
+            </div>
+            <div class="interest-card">
+              <div class="interest-icon">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 20l6-6 4 4 6-8 4 10" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <h4>Technical Writing & Teaching</h4>
+                <p>Writes weekly dev essays on Substack. Believes teaching sharpens thinking and builds community.</p>
+              </div>
+            </div>
+            <div class="interest-card">
+              <div class="interest-icon">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="10" r="5" stroke="var(--accent)" stroke-width="1.8"/><path d="M5 24c0-5 4-8 9-8s9 3 9 8" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <h4>Mentorship & Dev Communities</h4>
+                <p>Runs monthly office hours for 500+ junior developers globally. Believes in paying the ladder forward.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skillset-col">
+          <h3 class="col-title">Technical Skill Set</h3>
+          <div class="skill-categories">
+            <div class="skill-cat">
+              <div class="skill-cat-header">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1" y="4" width="16" height="11" rx="2" stroke="var(--accent)" stroke-width="1.5"/><path d="M5 8l2.5 2.5L5 13" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 13h3" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Languages
+              </div>
+              <div class="skill-pills">
+                <span class="pill expert">TypeScript</span>
+                <span class="pill expert">JavaScript</span>
+                <span class="pill expert">Go</span>
+                <span class="pill advanced">Python</span>
+                <span class="pill advanced">Rust</span>
+                <span class="pill mid">Java</span>
+                <span class="pill mid">C++</span>
+              </div>
+            </div>
+            <div class="skill-cat">
+              <div class="skill-cat-header">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1" y="1" width="7" height="7" rx="1.5" stroke="var(--accent)" stroke-width="1.5"/><rect x="10" y="1" width="7" height="7" rx="1.5" stroke="var(--accent)" stroke-width="1.5"/><rect x="1" y="10" width="7" height="7" rx="1.5" stroke="var(--accent)" stroke-width="1.5"/><rect x="10" y="10" width="7" height="7" rx="1.5" stroke="var(--accent)" stroke-width="1.5"/></svg>
+                Frontend
+              </div>
+              <div class="skill-pills">
+                <span class="pill expert">React</span>
+                <span class="pill expert">Next.js</span>
+                <span class="pill advanced">Vue 3</span>
+                <span class="pill advanced">Svelte</span>
+                <span class="pill expert">TailwindCSS</span>
+                <span class="pill mid">WebGL</span>
+              </div>
+            </div>
+            <div class="skill-cat">
+              <div class="skill-cat-header">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1l3 5.5 6 .9-4.3 4.2 1 5.9L9 15 3.3 17.5l1-5.9L0 7.4l6-.9z" stroke="var(--accent)" stroke-width="1.4" stroke-linejoin="round"/></svg>
+                Backend & Cloud
+              </div>
+              <div class="skill-pills">
+                <span class="pill expert">Node.js</span>
+                <span class="pill expert">AWS</span>
+                <span class="pill expert">Docker</span>
+                <span class="pill advanced">Kubernetes</span>
+                <span class="pill advanced">GraphQL</span>
+                <span class="pill advanced">gRPC</span>
+                <span class="pill mid">GCP</span>
+              </div>
+            </div>
+            <div class="skill-cat">
+              <div class="skill-cat-header">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><ellipse cx="9" cy="5" rx="7" ry="3" stroke="var(--accent)" stroke-width="1.5"/><path d="M2 5v8c0 1.66 3.13 3 7 3s7-1.34 7-3V5" stroke="var(--accent)" stroke-width="1.5"/><path d="M2 9c0 1.66 3.13 3 7 3s7-1.34 7-3" stroke="var(--accent)" stroke-width="1.5"/></svg>
+                Databases
+              </div>
+              <div class="skill-pills">
+                <span class="pill expert">PostgreSQL</span>
+                <span class="pill expert">Redis</span>
+                <span class="pill advanced">MongoDB</span>
+                <span class="pill advanced">Elasticsearch</span>
+                <span class="pill mid">Cassandra</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-legend">
+            <span class="pill expert">Expert</span>
+            <span class="pill advanced">Advanced</span>
+            <span class="pill mid">Proficient</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="academics">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Education & Exams</div>
+        <h2 class="section-title">Academic Background &<br><em>Competitive Exams</em></h2>
+        <p class="section-sub">A foundation built on rigorous education and a competitive spirit.</p>
+      </div>
+      <div class="academics-layout">
+        <div class="edu-timeline">
+          <h3 class="col-title">Education</h3>
+          <div class="edu-item">
+            <div class="edu-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3L2 8l10 5 10-5-10-5z" stroke="var(--accent)" stroke-width="1.8" stroke-linejoin="round"/><path d="M2 8v8" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round"/><path d="M6 10.5v5.5c2 2 8 2 12 0v-5.5" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="edu-body">
+              <span class="edu-year">2009 – 2013</span>
+              <h4>B.Tech — Computer Science & Engineering</h4>
+              <p class="edu-inst">Massachusetts Institute of Technology (MIT), USA</p>
+              <p>GPA: 3.95 / 4.0 · Graduated Summa Cum Laude · Dean's List all semesters</p>
+              <div class="edu-tags"><span>Algorithms</span><span>OS Design</span><span>Compilers</span><span>Networks</span></div>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="18" height="14" rx="2" stroke="var(--accent)" stroke-width="1.8"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" stroke="var(--accent)" stroke-width="1.8"/><path d="M12 12v4M10 14h4" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <div class="edu-body">
+              <span class="edu-year">2013 – 2015</span>
+              <h4>M.S. — Distributed Computing Systems</h4>
+              <p class="edu-inst">Stanford University, California, USA</p>
+              <p>Thesis: "Adaptive Load Balancing in Heterogeneous Microservice Clusters" — Published in IEEE Journal</p>
+              <div class="edu-tags"><span>Distributed Systems</span><span>ML Ops</span><span>Research</span></div>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="var(--accent)" stroke-width="1.8"/><path d="M12 7v5l3 3" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="edu-body">
+              <span class="edu-year">Ongoing</span>
+              <h4>Certifications & Continuing Education</h4>
+              <p class="edu-inst">AWS, Google Cloud, CNCF, Linux Foundation</p>
+              <div class="edu-tags"><span>AWS Solutions Architect</span><span>CKA</span><span>Google Cloud Pro</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="exams-prizes-col">
+          <h3 class="col-title">Competitive Exams & Prizes</h3>
+          <div class="exam-cards">
+            <div class="exam-card gold">
+              <div class="exam-medal">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="18" r="10" stroke="#d97706" stroke-width="2"/><path d="M10 8l6-6 6 6" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="18" r="6" stroke="#d97706" stroke-width="1.5"/><path d="M14 18l1.5 1.5L18 16" stroke="#d97706" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <span class="exam-rank">1st Place — Gold</span>
+                <h4>Google Code Jam</h4>
+                <p>World Finals 2019, Mountain View CA · Advanced to top 10 globally among 300,000+ participants.</p>
+              </div>
+            </div>
+            <div class="exam-card silver">
+              <div class="exam-medal">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="18" r="10" stroke="#6b7280" stroke-width="2"/><path d="M10 8l6-6 6 6" stroke="#6b7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="18" r="6" stroke="#6b7280" stroke-width="1.5"/></svg>
+              </div>
+              <div>
+                <span class="exam-rank">2nd Place — Silver</span>
+                <h4>Facebook Hacker Cup</h4>
+                <p>Finals 2018 · Competed as solo entry against 200,000+ developers across 90 countries worldwide.</p>
+              </div>
+            </div>
+            <div class="exam-card bronze">
+              <div class="exam-medal">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="18" r="10" stroke="#92400e" stroke-width="2"/><path d="M10 8l6-6 6 6" stroke="#92400e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <span class="exam-rank">3rd Place — Bronze</span>
+                <h4>ICPC World Finals</h4>
+                <p>Moscow 2017 · MIT team placed 3rd globally in the International Collegiate Programming Contest.</p>
+              </div>
+            </div>
+            <div class="exam-card special">
+              <div class="exam-medal">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4l2.5 5 5.5.8-4 3.9.9 5.5L16 17l-4.9 2.7.9-5.5-4-3.9 5.5-.8z" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <span class="exam-rank">National Qualifier</span>
+                <h4>GATE CS (AIR 12)</h4>
+                <p>All India Rank 12 in Graduate Aptitude Test — Engineering. Percentile: 99.98. Year: 2013.</p>
+              </div>
+            </div>
+            <div class="exam-card special">
+              <div class="exam-medal">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="8" width="24" height="18" rx="3" stroke="var(--accent)" stroke-width="2"/><path d="M10 8V6a2 2 0 014 0v2" stroke="var(--accent)" stroke-width="2"/><path d="M12 17l2 2 4-4" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <span class="exam-rank">Certified — Distinguished</span>
+                <h4>AWS Cloud Practitioner Exam</h4>
+                <p>Score: 975 / 1000. Highest batch score in the North American cohort. Year: 2021.</p>
+              </div>
+            </div>
+            <div class="exam-card gold">
+              <div class="exam-medal">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="10" stroke="#d97706" stroke-width="2"/><path d="M11 16l3.5 3.5L21 11" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <span class="exam-rank">Winner</span>
+                <h4>HackerRank World Code Sprint</h4>
+                <p>Won the 2020 Annual Code Sprint. Solved all 7 problems in under 90 minutes — ranked 1st worldwide.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-soft" id="achievements">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Impact & Work</div>
+        <h2 class="section-title">Top Contributions &<br><em>Notable Achievements</em></h2>
+        <p class="section-sub">12 years of meaningful work — the projects and moments that define the journey.</p>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card featured-ach">
+          <div class="ach-img-placeholder">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="24" rx="3" stroke="var(--accent)" stroke-width="2"/><path d="M12 18l5-5 4 4 5-6" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="8" y="32" width="24" height="4" rx="2" fill="var(--accent)" opacity=".2"/></svg>
+            <p>Project Screenshot</p><small>1200 × 700 px</small>
+          </div>
+          <div class="ach-body">
+            <span class="ach-tag">Open Source</span>
+            <h3>ReactQuery Pro — 9.4K GitHub Stars</h3>
+            <p>Built and maintain an open-source data-synchronisation library for React that is used by 4,200+ production apps. Featured by the React team at React Conf 2022.</p>
+            <div class="ach-stats">
+              <span>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1l1.75 3.5L13 5.3l-3 2.9.7 4.1L7 10.5l-3.7 1.8.7-4.1L1 5.3l4.25-.8z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+                9,400 Stars
+              </span>
+              <span>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+                1,200 Forks
+              </span>
+              <span>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.4"/><path d="M5 7l1.5 1.5L9 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                4,200+ Users
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="achievement-card">
+          <div class="ach-img-placeholder small">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M4 24L14 8l6 9 4-5 4 12H4z" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"/></svg>
+            <small>800 × 500 px</small>
+          </div>
+          <div class="ach-body">
+            <span class="ach-tag">Enterprise</span>
+            <h3>Payment Infrastructure at Stripe</h3>
+            <p>Led the redesign of Stripe's webhook delivery system, reducing failure rate by 94% and increasing throughput from 5M to 50M events/day.</p>
+          </div>
+        </div>
+        <div class="achievement-card">
+          <div class="ach-img-placeholder small">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="var(--accent)" stroke-width="2"/><path d="M10 16l4 4 8-8" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <small>800 × 500 px</small>
+          </div>
+          <div class="ach-body">
+            <span class="ach-tag">Google</span>
+            <h3>Google Maps Routing Engine</h3>
+            <p>Contributed 3 major algorithmic improvements to Maps' real-time traffic routing layer, still powering 1 billion users daily.</p>
+          </div>
+        </div>
+        <div class="achievement-card">
+          <div class="ach-img-placeholder small">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M6 28V14l10-10 10 10v14" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"/><rect x="12" y="20" width="8" height="8" rx="1" stroke="var(--accent)" stroke-width="2"/></svg>
+            <small>800 × 500 px</small>
+          </div>
+          <div class="ach-body">
+            <span class="ach-tag">Startup</span>
+            <h3>Co-Founded DevTrace (Acquired 2021)</h3>
+            <p>Co-founded a developer observability tool that grew to 18,000 paying teams and was acquired by Datadog for $24M in 2021.</p>
+          </div>
+        </div>
+        <div class="achievement-card">
+          <div class="ach-img-placeholder small">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="6" width="24" height="20" rx="3" stroke="var(--accent)" stroke-width="2"/><path d="M10 14h12M10 19h8" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/></svg>
+            <small>800 × 500 px</small>
+          </div>
+          <div class="ach-body">
+            <span class="ach-tag">Published</span>
+            <h3>3 Technical Books — O'Reilly</h3>
+            <p>"Designing Distributed Systems Vol. 2" sold 42,000 copies and is used in 60+ university curriculums worldwide.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="challenges-block" id="challenges">
+        <div class="challenges-header">
+          <div class="section-tag">Challenges</div>
+          <h2 class="section-title">Challenges Faced &<br><em>How I Dealt</em></h2>
+        </div>
+        <div class="challenges-grid">
+          <div class="challenge-card">
+            <div class="challenge-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4L3 10v8c0 5 5 9 11 10 6-1 11-5 11-10v-8L14 4z" stroke="var(--warn)" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 11v5M14 18h.01" stroke="var(--warn)" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h4>Scaling a Monolith Under Fire</h4>
+            <p class="challenge-situation"><strong>Challenge:</strong> Inherited a 500k-line Rails monolith with 3-minute deploy cycles crashing under 10x traffic growth.</p>
+            <p class="challenge-solution"><strong>Solution:</strong> Led a 9-month incremental strangler-fig migration to microservices. Zero downtime. Reduced p99 latency from 4s to 120ms.</p>
+            <span class="challenge-outcome">Outcome: 97% latency reduction</span>
+          </div>
+          <div class="challenge-card">
+            <div class="challenge-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" stroke="var(--warn)" stroke-width="1.8"/><path d="M14 9v6M14 17h.01" stroke="var(--warn)" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h4>Production Data Corruption Incident</h4>
+            <p class="challenge-situation"><strong>Challenge:</strong> A race condition in a financial ledger system corrupted 12,000 transaction records across 3 regions.</p>
+            <p class="challenge-solution"><strong>Solution:</strong> Built a reverse-replay audit engine overnight. Recovered 100% of records. Added distributed locking and idempotency keys.</p>
+            <span class="challenge-outcome">Outcome: Full recovery, zero data loss</span>
+          </div>
+          <div class="challenge-card">
+            <div class="challenge-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M7 20V8l7-5 7 5v12l-7 3-7-3z" stroke="var(--warn)" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 11v5" stroke="var(--warn)" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h4>Leading a Distributed Team in Crisis</h4>
+            <p class="challenge-situation"><strong>Challenge:</strong> Took over a 14-person team mid-sprint with 0% test coverage and a product launch in 6 weeks.</p>
+            <p class="challenge-solution"><strong>Solution:</strong> Introduced test-first culture, daily async standups, and shipped on time with 82% coverage and full CI/CD.</p>
+            <span class="challenge-outcome">Outcome: On-time launch, team morale restored</span>
+          </div>
+          <div class="challenge-card">
+            <div class="challenge-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="7" width="22" height="16" rx="2.5" stroke="var(--warn)" stroke-width="1.8"/><path d="M8 7V5a6 6 0 0112 0v2" stroke="var(--warn)" stroke-width="1.8" stroke-linecap="round"/><circle cx="14" cy="16" r="2.5" stroke="var(--warn)" stroke-width="1.5"/></svg>
+            </div>
+            <h4>Security Breach — Zero-Day Exploit</h4>
+            <p class="challenge-situation"><strong>Challenge:</strong> Discovered an active zero-day exploit in a client's authentication layer during a routine code review. Attack vector was live.</p>
+            <p class="challenge-solution"><strong>Solution:</strong> Patched in 4 hours. Designed a full security audit framework now used as company-wide policy.</p>
+            <span class="challenge-outcome">Outcome: Breach contained, no data exfiltrated</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="social">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Online Presence</div>
+        <h2 class="section-title">Social Media<br><em>Interaction Achievements</em></h2>
+        <p class="section-sub">Building community one post, one comment, one connection at a time.</p>
+      </div>
+      <div class="social-platforms">
+        <div class="platform-card">
+          <div class="platform-header">
+            <div class="platform-icon github-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 2C7.37 2 2 7.37 2 14c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 016 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58C22.57 23.8 26 19.3 26 14 26 7.37 20.63 2 14 2z" fill="white"/></svg>
+            </div>
+            <div>
+              <h3>GitHub</h3>
+              <span>@yournamedev</span>
+            </div>
+          </div>
+          <div class="platform-stats">
+            <div class="pstat"><strong>12.4K</strong><span>Stars</span></div>
+            <div class="pstat"><strong>3.2K</strong><span>Forks</span></div>
+            <div class="pstat"><strong>890</strong><span>Followers</span></div>
+            <div class="pstat"><strong>48</strong><span>Repos</span></div>
+          </div>
+          <div class="platform-img-placeholder">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 20l4-4h12V4H4v16z" stroke="var(--accent)" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            <small>Contribution graph · 600×150</small>
+          </div>
+          <div class="platform-highlight">🔥 365-day contribution streak · 2023</div>
+        </div>
+        <div class="platform-card">
+          <div class="platform-header">
+            <div class="platform-icon yt-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="2" y="6" width="24" height="16" rx="5" fill="white" opacity=".2"/><path d="M11.5 10.5l7 3.5-7 3.5v-7z" fill="white"/></svg>
+            </div>
+            <div>
+              <h3>YouTube</h3>
+              <span>CodeCraft with Your Name</span>
+            </div>
+          </div>
+          <div class="platform-stats">
+            <div class="pstat"><strong>124K</strong><span>Subscribers</span></div>
+            <div class="pstat"><strong>4.8M</strong><span>Views</span></div>
+            <div class="pstat"><strong>210</strong><span>Videos</span></div>
+            <div class="pstat"><strong>38K</strong><span>Likes</span></div>
+          </div>
+          <div class="platform-img-placeholder">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="9" height="7" rx="1.5" stroke="var(--accent)" stroke-width="1.5"/><rect x="13" y="2" width="9" height="7" rx="1.5" stroke="var(--accent)" stroke-width="1.5"/><rect x="2" y="13" width="9" height="7" rx="1.5" stroke="var(--accent)" stroke-width="1.5"/><rect x="13" y="13" width="9" height="7" rx="1.5" stroke="var(--accent)" stroke-width="1.5"/></svg>
+            <small>Channel thumbnail · 600×200</small>
+          </div>
+          <div class="platform-highlight">🎯 1M+ views on "Build a Compiler from Scratch"</div>
+        </div>
+        <div class="platform-card">
+          <div class="platform-header">
+            <div class="platform-icon li-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="2" y="2" width="24" height="24" rx="4" fill="white" opacity=".2"/><path d="M8 11v9M8 8v.01M13 20v-5a2 2 0 014 0v5M13 15h4" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <h3>LinkedIn</h3>
+              <span>your-name-dev</span>
+            </div>
+          </div>
+          <div class="platform-stats">
+            <div class="pstat"><strong>18.6K</strong><span>Followers</span></div>
+            <div class="pstat"><strong>142K</strong><span>Post Impressions</span></div>
+            <div class="pstat"><strong>4.2K</strong><span>Reactions</span></div>
+            <div class="pstat"><strong>980</strong><span>Comments</span></div>
+          </div>
+          <div class="platform-img-placeholder">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 3h18v18H3V3z" stroke="var(--accent)" stroke-width="1.5" stroke-linejoin="round"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 014 0v4M12 13h4" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <small>Profile screenshot · 600×300</small>
+          </div>
+          <div class="platform-highlight">💼 Top Voice — Software Engineering 2023</div>
+        </div>
+        <div class="platform-card">
+          <div class="platform-header">
+            <div class="platform-icon so-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="6" y="14" width="16" height="10" rx="1" stroke="white" stroke-width="1.5"/><path d="M9 14L11 4l12 5-2 5" stroke="white" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 17h10M9 20h10" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <h3>Stack Overflow</h3>
+              <span>yourname_dev</span>
+            </div>
+          </div>
+          <div class="platform-stats">
+            <div class="pstat"><strong>52K</strong><span>Reputation</span></div>
+            <div class="pstat"><strong>1,420</strong><span>Answers</span></div>
+            <div class="pstat"><strong>98K</strong><span>People Helped</span></div>
+            <div class="pstat"><strong>Top 1%</strong><span>Globally</span></div>
+          </div>
+          <div class="platform-img-placeholder">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2l3 6 7 1-5 5 1.2 7L12 18l-6.2 3L7 14 2 9l7-1z" stroke="var(--accent)" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            <small>Profile badges · 600×200</small>
+          </div>
+          <div class="platform-highlight">🥇 Gold badge in Node.js, TypeScript, React</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-soft" id="freelance">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Freelance Work</div>
+        <h2 class="section-title">Freelancing Projects<br><em>Done</em></h2>
+        <p class="section-sub">Selected client projects across industries — from seed-stage startups to Fortune 500s.</p>
+      </div>
+      <div class="freelance-grid">
+        <div class="freelance-card">
+          <div class="freelance-img-placeholder">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="3" y="6" width="30" height="22" rx="3" stroke="var(--accent)" stroke-width="2"/><path d="M10 22l5-7 4 5 3-3 4 5H10z" stroke="var(--accent)" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <small>800 × 450 px</small>
+          </div>
+          <div class="fl-meta">
+            <span class="fl-type">SaaS</span>
+            <span class="fl-budget">$28,000</span>
+          </div>
+          <h3>FinFlow — Real-Time Analytics Dashboard</h3>
+          <p>Built a multi-tenant financial analytics platform with live WebSocket feeds, custom charting, and role-based access for 8 enterprise clients.</p>
+          <div class="fl-tech"><span>React</span><span>Node.js</span><span>PostgreSQL</span><span>WebSocket</span></div>
+          <div class="fl-result">📈 Reduced reporting time from 3 hours to 4 minutes</div>
+        </div>
+        <div class="freelance-card">
+          <div class="freelance-img-placeholder">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="13" stroke="var(--accent)" stroke-width="2"/><path d="M12 18l4 4 8-8" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <small>800 × 450 px</small>
+          </div>
+          <div class="fl-meta">
+            <span class="fl-type">E-Commerce</span>
+            <span class="fl-budget">$18,500</span>
+          </div>
+          <h3>Nora — Headless Commerce Engine</h3>
+          <p>Designed a headless e-commerce engine with custom checkout, inventory sync across 6 warehouses, and sub-100ms search using Elasticsearch.</p>
+          <div class="fl-tech"><span>Next.js</span><span>Go</span><span>Elasticsearch</span><span>Stripe</span></div>
+          <div class="fl-result">🛒 $1.2M in sales within first 90 days</div>
+        </div>
+        <div class="freelance-card">
+          <div class="freelance-img-placeholder">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M8 28V15l10-9 10 9v13" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"/><rect x="14" y="22" width="8" height="6" rx="1" stroke="var(--accent)" stroke-width="2"/></svg>
+            <small>800 × 450 px</small>
+          </div>
+          <div class="fl-meta">
+            <span class="fl-type">HealthTech</span>
+            <span class="fl-budget">$35,000</span>
+          </div>
+          <h3>MediTrack — HIPAA-Compliant Platform</h3>
+          <p>Architected a HIPAA-compliant patient data platform with end-to-end encryption, audit trails, and EHR integrations for 14 hospital networks.</p>
+          <div class="fl-tech"><span>TypeScript</span><span>AWS</span><span>FHIR API</span><span>Kubernetes</span></div>
+          <div class="fl-result">🏥 Used by 14 hospitals, 120k+ patients</div>
+        </div>
+        <div class="freelance-card">
+          <div class="freelance-img-placeholder">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M6 10h24M6 18h24M6 26h16" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/></svg>
+            <small>800 × 450 px</small>
+          </div>
+          <div class="fl-meta">
+            <span class="fl-type">EdTech</span>
+            <span class="fl-budget">$22,000</span>
+          </div>
+          <h3>LearnLoop — Adaptive LMS</h3>
+          <p>Developed an AI-powered adaptive learning platform with personalised learning paths, auto-grading, and live coding assessments for 50,000 learners.</p>
+          <div class="fl-tech"><span>Vue 3</span><span>Python</span><span>FastAPI</span><span>OpenAI</span></div>
+          <div class="fl-result">📚 50,000 students enrolled in 6 months</div>
+        </div>
+        <div class="freelance-card">
+          <div class="freelance-img-placeholder">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M18 4l12 7v14l-12 7L6 25V11L18 4z" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"/><circle cx="18" cy="18" r="5" stroke="var(--accent)" stroke-width="1.5"/></svg>
+            <small>800 × 450 px</small>
+          </div>
+          <div class="fl-meta">
+            <span class="fl-type">Web3</span>
+            <span class="fl-budget">$42,000</span>
+          </div>
+          <h3>ChainVault — DeFi Protocol Interface</h3>
+          <p>Built the complete front-end and smart-contract integration layer for a DeFi yield-farming protocol. Managed $8M TVL at peak launch within 72 hours.</p>
+          <div class="fl-tech"><span>React</span><span>Solidity</span><span>Ethers.js</span><span>IPFS</span></div>
+          <div class="fl-result">💰 $8M TVL within 72 hours of launch</div>
+        </div>
+        <div class="freelance-card">
+          <div class="freelance-img-placeholder">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="4" y="8" width="28" height="20" rx="3" stroke="var(--accent)" stroke-width="2"/><path d="M10 18h16M10 23h10" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/></svg>
+            <small>800 × 450 px</small>
+          </div>
+          <div class="fl-meta">
+            <span class="fl-type">Media</span>
+            <span class="fl-budget">$14,000</span>
+          </div>
+          <h3>Pressly — Digital Publishing CMS</h3>
+          <p>Created a headless CMS with a visual editor, multi-language support, and CDN optimisation. Reduced page load times by 78% for a news publisher with 2M monthly readers.</p>
+          <div class="fl-tech"><span>Next.js</span><span>Sanity</span><span>Cloudflare</span></div>
+          <div class="fl-result">⚡ 78% faster load, 2M monthly readers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="store">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Virtual Store</div>
+        <h2 class="section-title">Products Available<br><em>For Sale</em></h2>
+        <p class="section-sub">Premium digital resources crafted from 12 years of hands-on engineering experience.</p>
+      </div>
+      <div class="store-grid">
+        <div class="store-card">
+          <div class="store-img-placeholder">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="6" width="32" height="28" rx="3" stroke="var(--accent)" stroke-width="2"/><path d="M12 14h16M12 19h16M12 24h10" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/></svg>
+            <small>Product Image · 600 × 400 px</small>
+          </div>
+          <div class="store-badge bestseller">Bestseller</div>
+          <div class="store-body">
+            <div class="store-cat">📘 E-Book</div>
+            <h3>Mastering TypeScript at Scale</h3>
+            <p>A 380-page deep dive into building type-safe, production-grade TypeScript systems. Covers generics, decorators, monorepos, and advanced patterns.</p>
+            <div class="store-meta">
+              <div class="store-rating">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="#f59e0b"><path d="M7 1l1.55 3.1L12 4.6l-2.5 2.45.59 3.45L7 9.3l-3.09 1.2.59-3.45L2 4.6l3.45-.5z"/></svg>
+                <span>4.9 (1,240 reviews)</span>
+              </div>
+              <span class="store-students">8,400 buyers</span>
+            </div>
+            <div class="store-price-row">
+              <div class="store-price">$49 <s class="price-old">$79</s></div>
+              <button class="btn-buy" onclick="handleBuy('Mastering TypeScript at Scale', 49)">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 2h2l2.4 6.5H12l2-5H5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="13" r="1.5" fill="currentColor"/><circle cx="12" cy="13" r="1.5" fill="currentColor"/></svg>
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="store-card">
+          <div class="store-img-placeholder">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="4" stroke="var(--accent)" stroke-width="2"/><path d="M14 14l4 4-4 4M22 22h4" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <small>Product Image · 600 × 400 px</small>
+          </div>
+          <div class="store-badge new">New</div>
+          <div class="store-body">
+            <div class="store-cat">🎓 Course</div>
+            <h3>System Design Masterclass</h3>
+            <p>42-hour video course covering designing for scale: load balancers, caches, databases, message queues, CDNs, and real-world case studies.</p>
+            <div class="store-meta">
+              <div class="store-rating">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="#f59e0b"><path d="M7 1l1.55 3.1L12 4.6l-2.5 2.45.59 3.45L7 9.3l-3.09 1.2.59-3.45L2 4.6l3.45-.5z"/></svg>
+                <span>4.8 (890 reviews)</span>
+              </div>
+              <span class="store-students">5,200 students</span>
+            </div>
+            <div class="store-price-row">
+              <div class="store-price">$89 <s class="price-old">$149</s></div>
+              <button class="btn-buy" onclick="handleBuy('System Design Masterclass', 89)">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 2h2l2.4 6.5H12l2-5H5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="13" r="1.5" fill="currentColor"/><circle cx="12" cy="13" r="1.5" fill="currentColor"/></svg>
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="store-card">
+          <div class="store-img-placeholder">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M20 4L4 12v8c0 9 7 17 16 20 9-3 16-11 16-20v-8L20 4z" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"/><path d="M14 20l4 4 8-8" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <small>Product Image · 600 × 400 px</small>
+          </div>
+          <div class="store-body">
+            <div class="store-cat">🧰 Template Bundle</div>
+            <h3>Full-Stack Starter Kit Pro</h3>
+            <p>Production-ready Next.js + Node.js monorepo with auth, payments, emails, roles, CI/CD, Docker, and 12 pre-built feature modules included.</p>
+            <div class="store-meta">
+              <div class="store-rating">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="#f59e0b"><path d="M7 1l1.55 3.1L12 4.6l-2.5 2.45.59 3.45L7 9.3l-3.09 1.2.59-3.45L2 4.6l3.45-.5z"/></svg>
+                <span>4.9 (620 reviews)</span>
+              </div>
+              <span class="store-students">3,100 teams</span>
+            </div>
+            <div class="store-price-row">
+              <div class="store-price">$129 <s class="price-old">$199</s></div>
+              <button class="btn-buy" onclick="handleBuy('Full-Stack Starter Kit Pro', 129)">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 2h2l2.4 6.5H12l2-5H5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="13" r="1.5" fill="currentColor"/><circle cx="12" cy="13" r="1.5" fill="currentColor"/></svg>
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="store-card">
+          <div class="store-img-placeholder">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="14" stroke="var(--accent)" stroke-width="2"/><path d="M14 20l5 5 7-9" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <small>Product Image · 600 × 400 px</small>
+          </div>
+          <div class="store-body">
+            <div class="store-cat">📋 Interview Prep</div>
+            <h3>FAANG Interview Prep Pack</h3>
+            <p>350 curated coding problems with detailed solutions, system design questions, behavioural interview frameworks, and 6 mock interview recordings.</p>
+            <div class="store-meta">
+              <div class="store-rating">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="#f59e0b"><path d="M7 1l1.55 3.1L12 4.6l-2.5 2.45.59 3.45L7 9.3l-3.09 1.2.59-3.45L2 4.6l3.45-.5z"/></svg>
+                <span>4.7 (1,800 reviews)</span>
+              </div>
+              <span class="store-students">11,000 buyers</span>
+            </div>
+            <div class="store-price-row">
+              <div class="store-price">$39 <s class="price-old">$69</s></div>
+              <button class="btn-buy" onclick="handleBuy('FAANG Interview Prep Pack', 39)">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 2h2l2.4 6.5H12l2-5H5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="13" r="1.5" fill="currentColor"/><circle cx="12" cy="13" r="1.5" fill="currentColor"/></svg>
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="store-card">
+          <div class="store-img-placeholder">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M8 32V16l12-10 12 10v16" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"/><rect x="15" y="24" width="10" height="8" rx="1.5" stroke="var(--accent)" stroke-width="1.8"/></svg>
+            <small>Product Image · 600 × 400 px</small>
+          </div>
+          <div class="store-badge limited">Limited</div>
+          <div class="store-body">
+            <div class="store-cat">🤝 1-on-1 Mentorship</div>
+            <h3>Private Mentorship Session</h3>
+            <p>90-minute 1-on-1 video session with Your Name. Code review, career strategy, technical deep-dive, or resume polish. Limited slots available each month.</p>
+            <div class="store-meta">
+              <div class="store-rating">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="#f59e0b"><path d="M7 1l1.55 3.1L12 4.6l-2.5 2.45.59 3.45L7 9.3l-3.09 1.2.59-3.45L2 4.6l3.45-.5z"/></svg>
+                <span>5.0 (310 sessions)</span>
+              </div>
+              <span class="store-students">310 sessions done</span>
+            </div>
+            <div class="store-price-row">
+              <div class="store-price">$199 <s class="price-old">$299</s></div>
+              <button class="btn-buy" onclick="handleBuy('Private Mentorship Session', 199)">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 2h2l2.4 6.5H12l2-5H5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="13" r="1.5" fill="currentColor"/><circle cx="12" cy="13" r="1.5" fill="currentColor"/></svg>
+                Book Session
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="store-cart-toast" id="cartToast">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="white" stroke-width="1.5"/><path d="M6 9l2 2 4-4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span id="cartToastMsg">Added to cart!</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-soft" id="teaching">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Live Teaching</div>
+        <h2 class="section-title">Online Coding<br><em>Teaching Sessions</em></h2>
+        <p class="section-sub">Regular live sessions open to developers of all levels — interactive, practical, and free to join.</p>
+      </div>
+      <div class="teaching-grid">
+        <div class="teaching-main">
+          <div class="session-img-placeholder">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="4" y="8" width="40" height="28" rx="4" stroke="var(--accent)" stroke-width="2"/><circle cx="19" cy="22" r="6" stroke="var(--accent)" stroke-width="2"/><path d="M30 18l6 6-6 6" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 42h28" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/></svg>
+            <p>Live Session Screenshot</p><small>900 × 500 px</small>
+          </div>
+          <div class="teaching-intro-text">
+            <h3>About the Sessions</h3>
+            <p>Every week I run live, interactive coding sessions on YouTube and Twitch. No recordings — just live collaborative problem solving, architectural walkthroughs, and real code reviews. Over 2,400 developers from 60+ countries have attended at least one session.</p>
+            <div class="teaching-highlights">
+              <div><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="var(--accent)" stroke-width="1.5"/><path d="M6 9l2 2 4-4" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Free to attend, recordings available to course members</div>
+              <div><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="var(--accent)" stroke-width="1.5"/><path d="M6 9l2 2 4-4" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Live Q&A, code reviews, and pair programming</div>
+              <div><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="var(--accent)" stroke-width="1.5"/><path d="M6 9l2 2 4-4" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> 2,400+ developers from 60+ countries</div>
+              <div><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="var(--accent)" stroke-width="1.5"/><path d="M6 9l2 2 4-4" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Running since 2019 — 260+ sessions completed</div>
+            </div>
+          </div>
+        </div>
+        <div class="sessions-schedule">
+          <h3 class="col-title">Weekly Schedule</h3>
+          <div class="session-cards">
+            <div class="session-card live-now">
+              <div class="session-live-badge">🔴 Live</div>
+              <div class="session-day">Monday</div>
+              <h4>DSA Deep Dive</h4>
+              <p>Trees, graphs, DP problems with walkthrough explanations. Beginner-friendly with advanced extensions.</p>
+              <div class="session-time">8:00 PM – 10:00 PM UTC</div>
+              <div class="session-platform"><span>YouTube</span><span>Twitch</span></div>
+              <a href="#contact" class="btn-session">Get Reminder</a>
+            </div>
+            <div class="session-card">
+              <div class="session-day">Wednesday</div>
+              <h4>System Design Wednesday</h4>
+              <p>Design YouTube, Uber, messageApp from scratch. Architecture, trade-offs, and whiteboard sessions.</p>
+              <div class="session-time">7:00 PM – 9:00 PM UTC</div>
+              <div class="session-platform"><span>YouTube</span></div>
+              <a href="#contact" class="btn-session">Get Reminder</a>
+            </div>
+            <div class="session-card">
+              <div class="session-day">Friday</div>
+              <h4>Build in Public</h4>
+              <p>Building a real SaaS product from idea to deployment live. Full-stack with TypeScript and AWS.</p>
+              <div class="session-time">6:00 PM – 9:00 PM UTC</div>
+              <div class="session-platform"><span>Twitch</span><span>YouTube</span></div>
+              <a href="#contact" class="btn-session">Get Reminder</a>
+            </div>
+            <div class="session-card">
+              <div class="session-day">Saturday</div>
+              <h4>Code Review Saturday</h4>
+              <p>Submit your PR and get it reviewed live on stream. Production-level feedback on real code from the community.</p>
+              <div class="session-time">4:00 PM – 6:00 PM UTC</div>
+              <div class="session-platform"><span>YouTube</span></div>
+              <a href="#contact" class="btn-session">Submit PR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Let's Connect</div>
+        <h2 class="section-title">Contact &<br><em>Book Appointment</em></h2>
+        <p class="section-sub">Whether it's a project, a collab, a speaking gig, or just to say hello — my inbox is open.</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-left">
+          <div class="contact-info-card">
+            <h3>Get In Touch</h3>
+            <div class="cinfo-item">
+              <div class="cinfo-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 5l7 6 7-6" stroke="var(--accent)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="2" y="4" width="16" height="12" rx="2" stroke="var(--accent)" stroke-width="1.6"/></svg>
+              </div>
+              <div><strong>Email</strong><p>yourname@yournamedev.com</p></div>
+            </div>
+            <div class="cinfo-item">
+              <div class="cinfo-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 2h3.5l1.5 4-2 1.5A10 10 0 0011 12l1.5-2 4 1.5V15c0 1.1-.9 2-2 2A14 14 0 012 4c0-1.1.9-2 2-2z" stroke="var(--accent)" stroke-width="1.6" stroke-linejoin="round"/></svg>
+              </div>
+              <div><strong>Phone / messageApp</strong><p>+1 (415) 234 5678</p></div>
+            </div>
+            <div class="cinfo-item">
+              <div class="cinfo-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2C6.68 2 4 4.68 4 8c0 5 6 10 6 10s6-5 6-10c0-3.32-2.68-6-6-6z" stroke="var(--accent)" stroke-width="1.6"/><circle cx="10" cy="8" r="2.5" stroke="var(--accent)" stroke-width="1.6"/></svg>
+              </div>
+              <div><strong>Location</strong><p>San Francisco, CA · Remote-first</p></div>
+            </div>
+            <div class="cinfo-item">
+              <div class="cinfo-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="var(--accent)" stroke-width="1.6"/><path d="M10 6v4l2.5 2.5" stroke="var(--accent)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div><strong>Availability</strong><p>Mon–Fri · 9 AM – 6 PM PST</p></div>
+            </div>
+            <div class="contact-social-row">
+              <a href="#" title="GitHub">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 1C5.03 1 1 5.03 1 10c0 3.98 2.58 7.35 6.16 8.54.45.08.61-.2.61-.44v-1.53c-2.5.54-3.03-1.2-3.03-1.2-.41-1.05-1-1.33-1-1.33-.82-.56.06-.55.06-.55.9.06 1.37.92 1.37.92.8 1.37 2.1.97 2.61.74.08-.58.31-.97.57-1.2-1.99-.22-4.09-1-4.09-4.44 0-.98.35-1.78.93-2.41-.09-.23-.4-1.14.09-2.38 0 0 .76-.24 2.48.92A8.6 8.6 0 0110 5.5c.77 0 1.54.1 2.26.3 1.72-1.16 2.48-.92 2.48-.92.49 1.24.18 2.15.09 2.38.58.63.93 1.43.93 2.41 0 3.45-2.1 4.21-4.1 4.44.32.28.61.82.61 1.65v2.45c0 .24.16.52.62.43A9.01 9.01 0 0019 10 9 9 0 0010 1z" fill="var(--text-mid)"/></svg>
+              </a>
+              <a href="#" title="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="1" y="1" width="18" height="18" rx="3" stroke="var(--text-mid)" stroke-width="1.5"/><path d="M5 8v7M5 5.5v.01M9 15v-4a2 2 0 014 0v4M9 11h4" stroke="var(--text-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="#" title="Twitter">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M18 3.5a8.3 8.3 0 01-2.36.65A4.15 4.15 0 0017.4 2a8.28 8.28 0 01-2.62 1A4.13 4.13 0 0010.5 2 4.14 4.14 0 006.37 6.1a4.3 4.3 0 00.1.94A11.74 11.74 0 011.6 2.7a4.13 4.13 0 001.28 5.52 4.1 4.1 0 01-1.87-.52v.05a4.14 4.14 0 003.32 4.06 4.15 4.15 0 01-1.87.07 4.14 4.14 0 003.87 2.88A8.32 8.32 0 011 16.54a11.7 11.7 0 006.35 1.86A11.7 11.7 0 0019.1 6.4c0-.18 0-.36-.02-.54A8.38 8.38 0 0020 3.8a8.23 8.23 0 01-2 .54z" fill="var(--text-mid)"/></svg>
+              </a>
+              <a href="#" title="YouTube">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="1" y="4" width="18" height="12" rx="4" stroke="var(--text-mid)" stroke-width="1.5"/><path d="M8 7.5l5 2.5-5 2.5v-5z" fill="var(--text-mid)"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="contact-photo-placeholder">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="13" r="7" stroke="var(--accent)" stroke-width="2"/><path d="M4 32c0-7.7 6.3-13 14-13s14 5.3 14 13" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/></svg>
+            <small>Avatar / Profile Photo · 400×400</small>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contactForm" novalidate>
+            <h3>Send a Message</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name *</label>
+                <input type="text" id="fname" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name *</label>
+                <input type="text" id="lname" placeholder="Doe" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cemail">Email Address *</label>
+              <input type="email" id="cemail" placeholder="you@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="cphone">Phone / messageApp</label>
+              <input type="tel" id="cphone" placeholder="+1 234 567 8900" />
+            </div>
+            <div class="form-group">
+              <label for="ctype">Enquiry Type *</label>
+              <select id="ctype" required>
+                <option value="">— Select type —</option>
+                <option>💼 Freelance Project</option>
+                <option>🤝 Full-Time Opportunity</option>
+                <option>📚 Course / Teaching</option>
+                <option>🛒 Product Purchase Help</option>
+                <option>🎤 Speaking / Podcast</option>
+                <option>🤝 Collaboration</option>
+                <option>💬 General Enquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cdate">Preferred Appointment Date</label>
+              <input type="date" id="cdate" />
+            </div>
+            <div class="form-group">
+              <label for="cbudget">Project Budget (if applicable)</label>
+              <select id="cbudget">
+                <option value="">— Select range —</option>
+                <option>Under $5,000</option>
+                <option>$5,000 – $15,000</option>
+                <option>$15,000 – $50,000</option>
+                <option>$50,000+</option>
+                <option>Not applicable</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cmessage">Your Message *</label>
+              <textarea id="cmessage" rows="5" placeholder="Tell me about your project, idea, or how I can help..." required></textarea>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" id="cnewsletter" />
+              <label for="cnewsletter">Subscribe to my weekly dev newsletter (no spam, unsubscribe anytime).</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="cSubmitBtn">
+              Send Message & Book Appointment ✉️
+            </button>
+            <p class="form-note">* Required fields · Usually responds within 24 hours</p>
+          </form>
+          <div class="form-success" id="formSuccess" style="display:none">
+            <div class="success-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" stroke="var(--accent)" stroke-width="2"/><path d="M14 24l8 8 12-14" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Message Sent!</h3>
+            <p>Your email client has been opened with a pre-filled message. Your Name typically responds within 24 hours.</p>
+            <button class="btn btn-ghost" id="resetFormBtn">Send Another Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="thankyou-section" id="thankyou">
+    <div class="container">
+      <div class="ty-content">
+        <div class="ty-icon">
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+            <circle cx="32" cy="32" r="28" stroke="var(--accent)" stroke-width="2" opacity=".3"/>
+            <circle cx="32" cy="32" r="20" stroke="var(--accent)" stroke-width="1.5" opacity=".5"/>
+            <path d="M20 32l8 8 16-16" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="section-tag" style="margin-bottom:16px">That's a Wrap!</div>
+        <h2 class="ty-title">Thank You<br>For <em>Visiting</em></h2>
+        <p class="ty-msg">You've reached the end of my portfolio. Whether you're a recruiter, a fellow developer, a client, or just curious — I appreciate your time. Every great product started with a conversation. Let's start ours.</p>
+        <div class="ty-quote">
+          <blockquote>"The best code I ever wrote wasn't the cleverest. It was the one my team could understand, extend, and be proud of together."</blockquote>
+          <cite>— Your Name</cite>
+        </div>
+        <div class="ty-actions">
+          <a href="#contact" class="btn btn-primary">Start a Conversation</a>
+          <a href="#hero" class="btn btn-ghost">Back to Top ↑</a>
+        </div>
+        <div class="ty-stats">
+          <div class="ty-stat"><strong>12</strong><span>Years Experience</span></div>
+          <div class="ty-stat"><strong>180+</strong><span>Projects</span></div>
+          <div class="ty-stat"><strong>2.4K+</strong><span>Students Taught</span></div>
+          <div class="ty-stat"><strong>12K+</strong><span>GitHub Stars</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="var(--accent)"/><text x="5" y="20" font-family="DM Mono" font-size="12" font-weight="500" fill="white">&lt;/&gt;</text></svg>
+          <span>Your<strong>Name</strong></span>
+        </div>
+        <p>© 2024 Your Name · Senior Software Engineer · San Francisco, CA</p>
+        <p class="footer-sub">Built with HTML, CSS & Vanilla JS — No frameworks, no excuses.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#hero" class="back-to-top" id="backToTop" title="Back to top">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 13V5M5 9l4-4 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+
+  <script src="js/canvas.js"></script>
+  <script src="js/slideshow.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
